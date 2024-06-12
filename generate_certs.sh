@@ -29,8 +29,8 @@ echo -e "./easyrsa build-ca nopass"
 echo -e "./easyrsa build-server-full server nopass"
 ./easyrsa build-server-full server nopass
 
-echo -e "./easyrsa build-client-full client1.domain.tld nopass"
-./easyrsa build-client-full client1.domain.tld nopass
+echo -e "./easyrsa build-client-full client4.cinuru.com nopass"
+./easyrsa build-client-full client4.cinuru.com nopass
 
 echo -e "cp pki/ca.crt ~/$folder/"
 cp pki/ca.crt ~/$folder/
@@ -42,10 +42,10 @@ echo -e "cp pki/private/server.key ~/$folder/"
 cp pki/private/server.key ~/$folder/
 
 echo -e "cp pki/issued/client1.domain.tld.crt ~/$folder"
-cp pki/issued/client1.domain.tld.crt ~/$folder
+cp pki/issued/client4.cinuru.com.crt ~/$folder
 
 echo -e "cp pki/private/client1.domain.tld.key ~/$folder/"
-cp pki/private/client1.domain.tld.key ~/$folder/
+cp pki/private/client4.cinuru.com.key ~/$folder/
 
 echo -e "cd ~/$folder/"
 cd ~/$folder/
